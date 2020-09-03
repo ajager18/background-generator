@@ -1,7 +1,5 @@
 var _=require("lodash");
 
-var array = [1,2,3,4,5];
-console.log(_.without(array,4));
 
 var css = document.querySelector("h3");
 var color1 = document.getElementById("color1");
