@@ -1,3 +1,8 @@
+var _=require("lodash");
+
+var array = [1,2,3,4,5];
+console.log(_.without(array,4));
+
 var css = document.querySelector("h3");
 var color1 = document.getElementById("color1");
 var color2 = document.getElementById("color2");
@@ -13,11 +18,11 @@ function setGradient (){
 
 
 function random (){
-	// color1.value = Math.floor(Math.random()*256);
-	
-	body.style.background = 
-	"linear-gradient(to right, rgb(255,255,0), rgb (255,0,0));"
-	
+	color1.value = "#" + Math.floor(Math.random()*100) + Math.floor(Math.random()*100) + Math.floor(Math.random()*100);
+	color2.value = "#" + Math.floor(Math.random()*100) + Math.floor(Math.random()*100) + Math.floor(Math.random()*100);
+	body.style.background = "linear-gradient(to right, "
+	+ color1.value + ", " + color2.value + ")";
+	css.textContent = body.style.background + ";";
 }
 
 
